@@ -1,0 +1,11 @@
+=====================================================
+================= Functions Document ================
+=====================================================
+
+getAllFrom($field , $table , $orderField , $where=NULL , $and=NULL , $ordering="DESC")
+
+// 1- $field        : is the columm that we want to select 
+// 2- $table        : is the table that we want to select
+// 3- $orderField   : is the field that we want to ordering according to it
+// 4- $where        : is the condition [ Can Be Empty ]
+// 5- $ordering     : is the ordering Type [ Desc or Asc ] the default value = "DESC"

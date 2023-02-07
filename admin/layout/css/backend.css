@@ -1,0 +1,432 @@
+/* ---------------------------------- global ----------------------------- */
+* 
+{
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box ;
+    box-sizing: border-box ;
+    margin:0;
+    padding:0;
+}
+body
+{
+    font-family: sans-serif ;  
+    background-color: #F4F4F4; 
+    font-size: 16px ;
+}
+/* Asterisk "*" of inputFields  */
+.asterisk
+{
+    position: absolute;
+    right: 30px  ;
+    top: 8px ;
+    color: #D20707;
+    font-size: 30px;
+}
+/* ++++++++++++++++++++ Start Login Form ++++++++++++++++++++ */
+.login
+{
+    width: 300px;
+    margin: 100px auto;
+    /* border: 2px solid #f00;  */
+}
+.login h4
+{
+    color: #888;
+}
+.login input
+{
+    margin-bottom: 10px;
+}
+.login .form-control
+{
+    background-color: #EAEAEA;
+}
+.login .btn
+{
+    background-color: #008dde;
+}
+/* ++++++++++++++++++++ End Login Form ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Bootstrap Edits ++++++++++++++++++++ */
+.navbar
+{
+    border-radius: 0 ;
+    margin-bottom: 0 ;
+}
+/* navbar : Logo */
+.navbar-brand
+{
+    /* font-size = 1 time from (body) font-size  */
+    font-size: 1em ;
+}
+/* navbar : links */
+/* navbar : Logo */
+.nav > li > a ,
+.navbar-brand
+{
+    padding: 15px 12px;
+}
+/* navbar : links : dropdown */
+.navbar-inverse .navbar-nav > .dropdown > a:focus ,
+.navbar-inverse .navbar-nav > .dropdown > a:hover  
+/* navbar : links : dropdown menu */
+.dropdown-menu
+{
+    color: #fff ;
+    background-color: #3498db;
+}
+/* navbar : links : dropdown menu */
+.dropdown-menu 
+{
+    min-width: 180px ;
+    padding: 0 ;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 ;
+    background-color: #3498db;
+    /* border: 2px solid #f00 ; */
+}
+/* navbar : links : dropdown menu : a  */
+.dropdown-menu > li > a
+{
+    color: #fff ;
+    padding: 10px 15px ;
+    transition: all 0.3s ease-in-out;
+}
+/* When Hover on dropdown menu links  */
+.dropdown-menu > li > a:hover ,
+.dropdown-menu > li > a:focus
+{
+    padding: 10px 25px ;
+}
+/* All "inputFields */
+.form-control
+{
+    position: relative;
+}
+.alert
+{
+    margin-top: 80px;
+}
+/* ++++++++++++++++++++ End Bootstrap Edits ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Dashboard Page ++++++++++++++++++++ */
+/* ///////////////// Statistics ///////////////// */
+/* Box  : Statistics */
+.home-statis   .statis
+{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 18px;
+    color : #fff;
+    background-color: #EEE;
+    border-radius: 10px;
+    border: 1px solid #CCC ;
+}
+.home-statis   .statis  i
+{
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    font-size: 80px;
+}
+.home-statis   .statis  .info
+{
+    float: right;
+}
+.home-statis   .statis  a
+{
+    text-decoration: none ;
+    color: #fff;
+}
+.home-statis   .statis  span
+{
+    display: block;
+    font-size:60px;
+}
+/* Box 1 : Members Statistics */
+.home-statis  .st-members
+{
+    background-color: #3498db;
+}
+/* Box 2 : pending Statistics */
+.home-statis  .st-pending
+{
+    background-color: #c0392b;
+}
+/* Box 3 : items Statistics */
+.home-statis  .st-items
+{
+    background-color: #d35400;
+}
+/* Box 4 : Members comments */
+.home-statis  .st-comments
+{
+    background-color: #8e44ad;
+}
+/* ///////////////// Panel ///////////////// */
+.latest
+{
+    margin-top: 30px ;
+}
+.latest .toggleInfo
+{
+    color: #999;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.latest .toggleInfo:hover
+{
+    color: #333;
+}
+.latest     ul.latest-users
+{
+    margin-bottom: 0 ;
+}
+.latest     ul.latest-users     li
+{
+    padding: 10px ;
+    overflow: hidden;
+}
+.latest     ul.latest-users     li:nth-child(odd)
+{
+    background-color: #EEE;
+}
+/* success , info , delete button */
+.latest     ul.latest-users     li  span.btn-success ,
+.latest     ul.latest-users     li  span.btn-info    ,
+.latest     ul.latest-users     li  span.btn-danger 
+{
+    padding: 2px 8px ;
+}
+/* info , delete button */
+.latest     ul.latest-users     li  span.btn-info ,
+.latest     ul.latest-users     li  span.btn-danger 
+{
+    margin-right: 5px ;
+}
+/* Latest : comments */
+.latest .comment-box
+{
+    margin: 5px 0 10px 0 ;
+}
+/* Latest : comments [ username , comment ]*/
+.latest .comment-box .member-n ,
+.latest .comment-box .member-c
+{
+    float: left;
+}
+.latest .comment-box .member-n 
+{
+    width: 80px;
+    margin-right: 20px ;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.latest .comment-box .member-c
+{
+    /* username width = width + margin_right = 80px + 20px */
+    width: calc(100% - 100px);
+    padding: 10px;
+    background-color: #EFEFEF;
+    position: relative;
+}
+.latest .comment-box .member-c::before
+{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 5px ;
+    left: -28px ;
+    width: 0px ;
+    height: 0px ;
+    border-style: solid ;
+    border-color: transparent #EFEFEF transparent transparent;
+    border-width: 15px;
+}
+/* ++++++++++++++++++++ End Dashboard Page  ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Member Page ++++++++++++++++++++ */
+h1
+{
+    font-size: 50px;
+    margin-bottom: 20px  ;
+    font-weight: bold;
+    color: #666 ; 
+}
+/* "Show/Hide" Password */
+#showPass
+{
+    position: absolute;
+    right: -30px;
+    top: 6px;
+    cursor: pointer;
+}
+/* ========= manage Table =========  */
+.mainTable
+{
+    box-shadow: 0 3px 10px #ccc ;
+}
+.mainTable  td 
+{
+    vertical-align: middle !important;
+    background-color: #fff ;
+}
+.mainTable  thead tr th
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+/* Table : "Edit" and "Delete" Button */
+.mainTable  .btn
+{
+    padding: 3px 10px ;
+}
+/* "Avatar Image" */
+.manage-members img
+{
+    width: 50px;
+    height: 50px;
+}
+/* ++++++++++++++++++++ End Member Page ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Category Page ++++++++++++++++++++ */
+/* Panel Heading */
+.categories     .panel-heading 
+{
+    color: #959595;
+    font-weight: bold;
+}
+/* Panel Heading : Edit Icon */
+.categories     .panel-heading  i
+{
+    position: relative;
+    top: 1px;
+}
+/* Panel Heading : Ordering Link && Views Span */
+.categories     .panel-heading  .option   a 
+{
+    text-decoration: none;
+}
+.categories     .panel-heading  .option   span
+{
+    cursor: pointer;
+}
+.categories     .panel-heading  .option   a     ,
+.categories     .panel-heading  .option   span
+{
+    color: #888;
+}
+/* Ordering Link && Views Span */
+.categories     .panel-heading  .option   a.active   ,
+.categories     .panel-heading  .option   span.active
+{
+    color: #f00;
+}
+/* Panel Body */
+.categories     .panel-body
+{
+    padding: 0 ;
+}
+.categories  .cat
+{
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+}
+/* "Edit" , "Delete" Buttons */
+.categories  .cat   .hidden-buttons
+{
+    position: absolute;
+    top: 15px;
+    right: -120px;
+    --webkit-transition: all 0.5s ease-in-out;
+    --moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+/* When Hover on ".cat" , make "background-color=#EEE" */
+.categories  .cat:hover 
+{
+    background-color: #EEE;
+}
+/* When Hover on ".cat" , make ".hidden-button" right=10px */
+.categories  .cat:hover  .hidden-buttons
+{
+    right: 10px;
+}
+.categories  .cat   .hidden-buttons   a
+{
+    margin-right: 5px;
+}
+.categories  .cat   h3
+{
+    margin: 0 ;
+    cursor: pointer;
+    font-weight: bold;
+    color: #6A6A6A;
+}  
+.categories  .cat  .full-view  p
+{
+    margin: 10px 0 ;
+    color: #707070;
+}
+.categories  hr
+{
+    margin: 0 ;
+}
+/* delete the last "hr" After last "category" */
+.categories  .cat:last-of-type ~ hr
+{
+    display: none;
+}
+/* "Hidden" Categories , "Commenting Disabled" Categories */
+.categories  .cat  .globalSpan
+{
+    margin-right: 6px;
+    padding: 4px 6px ;
+    color: #FFF;
+    border-radius: 6px;
+} 
+.categories  .cat  .visibility 
+{
+    background-color: #d35400;
+}
+.categories  .cat  .commenting
+{
+    background-color: #2c3e50;
+}
+.categories  .cat  .advertises
+{
+    background-color: #c0392b;
+}
+.categories    .addCategory
+{
+    margin-bottom: 30px;
+}
+/* Child Categories  :  ul */
+.categories    .child-cats
+{
+    margin: 0px ;    
+}
+.categories    .child-head 
+{
+    margin: 15px 0 10px 0; 
+    font-size: 16px;   
+    font-weight: bold ;
+    color: #22ab79;
+}
+/* Child Categories  : ul : li */
+.categories   .child-cats  li
+{
+    margin-left: 15px;
+}
+.categories   .child-cats  li:before
+{
+    content: "- ";
+}
+/* "delete button" of "sub-category" */
+.categories   .child-cats  li   .show-delete
+{
+    color: #f00 ;
+    display: none;
+}
+/* ++++++++++++++++++++ End Category Page ++++++++++++++++++++ */

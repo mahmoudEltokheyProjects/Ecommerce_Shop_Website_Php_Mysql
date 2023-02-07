@@ -1,0 +1,346 @@
+/* ---------------------------------- global ----------------------------- */
+* 
+{
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box ;
+    box-sizing: border-box ;
+    margin:0;
+    padding:0;
+}
+body
+{
+    font-family: sans-serif ;  
+    background-color: #F4F4F4; 
+    font-size: 16px ;
+}
+/* form : inputField Container */
+.input-container
+{
+    position: relative;
+}
+/* Asterisk "*" of inputFields  */
+.asterisk               ,
+.main-form  .asterisk
+{
+    position: absolute;
+    top: 8px ;
+    color: #D20707;
+}
+/* in "login.php , signup.php Page" :  Asterisk "*" of inputFields  */
+.asterisk
+{   
+    right: 8px ;
+    font-size: 20px;
+}
+/* in "newad.php Page" : Asterisk "*" of inputFields */
+.main-form  .asterisk
+{
+    right: 30px  ;
+    font-size: 30px;   
+}
+h1
+{
+    font-size: 55px;
+    margin-bottom: 20px  ;
+    font-weight: bold;
+    color: #666 ; 
+}
+/* ++++++++++++++++++++ End Global Style ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Bootstrap Edits ++++++++++++++++++++ */
+.navbar
+{
+    border-radius: 0 ;
+    margin-bottom: 0 ;
+}
+/* navbar : Logo */
+.navbar-brand
+{
+    /* font-size = 1 time from (body) font-size  */
+    font-size: 1em ;
+}
+/* navbar : links */
+/* navbar : Logo */
+.nav > li > a ,
+.navbar-brand
+{
+    padding: 15px 12px;
+}
+/* navbar : links : dropdown */
+.navbar-inverse .navbar-nav > .dropdown > a:focus ,
+.navbar-inverse .navbar-nav > .dropdown > a:hover  
+/* navbar : links : dropdown menu */
+.dropdown-menu
+{
+    color: #fff ;
+    background-color: #3498db;
+}
+/* navbar : links : dropdown menu */
+.dropdown-menu 
+{
+    min-width: 180px ;
+    padding: 0 ;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 ;
+    background-color: #3498db;
+    /* border: 2px solid #f00 ; */
+}
+/* navbar : links : dropdown menu : a  */
+.dropdown-menu > li > a
+{
+    color: #fff ;
+    padding: 10px 15px ;
+    transition: all 0.3s ease-in-out;
+}
+/* When Hover on dropdown menu links  */
+.dropdown-menu > li > a:hover ,
+.dropdown-menu > li > a:focus
+{
+    padding: 10px 25px ;
+}
+/* All "inputFields */
+.form-control
+{
+    position: relative;
+}
+/* ++++++++++++++++++++ Start Bootstrap Edits ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Header ++++++++++++++++++++ */
+/* Upper Navbar */
+.upper-bar
+{
+    padding:10px;
+    background-color:#fff;
+}
+/* "User Profile avatar"  image */
+.upper-bar  .userAvatar
+{
+    width: 40px;
+    height: 40px;
+}
+.upper-bar  .userAvatar .my-image
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* ++++++++++++++++++++ End Header ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Login Page ++++++++++++++++++++ */
+.login-page  form
+{
+    max-width:380px;
+    margin:auto;
+}
+/* Form Errors */
+.login-page  form   .the-errors
+{
+    max-width: 380px;
+    margin: auto;
+}
+.the-errors .msg
+{
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 8px;
+    border-top: 1px solid #e0e0e0;
+    border-left: 5px solid #cd6858;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;;
+    color: #919191;
+    background-color: #fff;
+}
+/* Hide The "signup" Form */
+.login-page  form.signup
+{
+    display: none;
+}
+/* When Click on "span" with [data-class="login"] and class="selected"  */
+.login-page   span[data-class="login"].selected
+{
+    color: #337AB7;
+}
+/* When Click on "span" with [data-class="signup"] and class="selected"  */
+.login-page   span[data-class="signup"].selected
+{
+    color:#5cb85c;
+}
+.login-page     h1
+{
+    color: #C0C0C0 ; 
+}
+.login-page  h1  span
+{
+    cursor: pointer;
+}
+.login-page  form   input
+{
+    margin-bottom:10px;
+}
+/* ++++++++++++++++++++ End Login Page  ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Categories Page ++++++++++++++++++++ */
+.item-box
+{
+    position:relative;
+    /* min-height: 450px; */
+    /* max-height: 800px; */
+}
+.item-box   .price-tag
+{
+    position:absolute;
+    left:0;
+    top: 10px;
+    padding:2px 10px;
+    font-weight:bold;
+    color:#fff;
+    background-color:#B4B4B4;
+}
+/* "Approve Status" span */
+.item-box   .approve-status
+{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    padding: 3px 5px;
+    color: #FFF;
+    background-color: #b85a5a;
+}
+/* 'header' and 'paragraph' of "item box" */
+.item-box   .caption    h3 ,
+.item-box   .caption    p
+{
+    height: 44px;
+    max-height: 44px;
+}
+/* ++++++++++++++++++++ End Categories Page ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Profile Page ++++++++++++++++++++ */
+.information
+{
+    margin-top:20px ;
+}
+.information   ul
+{
+    padding: 0;
+    margin: 0;
+}
+.information   ul   li
+{
+    padding: 10px;
+}
+.information   ul   li:nth-child(odd)
+{
+    background-color: #EEE;
+}
+.information  ul  li  span
+{
+    display: inline-block;
+    width: 150px;
+}
+/* "added_date" of Item */
+.thumbnail .date
+{
+    text-align: right;
+    color: #AAA;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* "Edit Information" Button  */
+.information  .editInfoBtn
+{
+    margin-top: 10px;
+}
+/* Box3 : Latest Comments */
+.my-comments
+{
+    overflow: hidden;
+    word-wrap: break-word;
+}
+/* ++++++++++++++++++++ End Profile Page ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Show Item Page ++++++++++++++++++++ */
+.item-info  h2 
+{
+    margin: 0;
+    padding: 0 10px 0 10px ;
+}
+.item-info  p
+{
+    font-size: 20px;
+}
+.item-info  p  ,
+.item-info  ul  li  
+{
+    padding: 10px;   
+}
+.item-info    ul   li:nth-child(odd)
+{
+    background-color: #EEE;
+}
+.item-info  ul  li  i
+{
+    padding: 0 ;
+    margin: 0 ;
+}
+/* "tagName" link */
+.item-info  ul  li a.tagName
+{
+    display: inline-block;
+    margin-right: 5px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: #666;
+    background-color: #e2e2e2;
+}
+.item-info   ul  li  span
+{
+    display: inline-block;
+    width: 150px;
+}
+.add-comment    h3
+{
+    margin: 0 0 10px ;
+}
+.add-comment   textarea
+{
+    display: block;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 120px;
+}
+/* "Comment" Image */
+.comment-box    img
+{
+    max-width: 100px ;
+    margin-bottom: 10px;
+}
+/* "Comment" Paragraph */
+.comment-box    .lead
+{
+    position: relative;
+    min-height: 100px;
+    padding: 10px;
+    word-wrap: break-word;
+    background-color: #E0E0E0;
+}
+.comment-box    .lead:before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-width: 15px ;
+    border-style: solid ;
+    border-color:transparent #E0E0E0 transparent transparent;
+}
+/* ++++++++++++++++++++ End Show Item Page ++++++++++++++++++++ */
+/* ++++++++++++++++++++ Start Our Custom Style ++++++++++++++++++++ */
+.custom-hr
+{
+    border-top: 1px solid #c9c9c9;
+}
+.custom-hr:last-of-type
+{
+    display: none;
+}
+/* ++++++++++++++++++++ End Our Custom Style ++++++++++++++++++++ */
+
